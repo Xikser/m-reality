@@ -1,6 +1,5 @@
 <template>
-  <Home></Home>
-	<HomeList></HomeList>
+	<router-view :currentHouse="this.$store.state.currentHouse"/>
 </template>
 
 <style lang="sass">

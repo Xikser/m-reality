@@ -5,7 +5,7 @@ import store from './store'
 
 //components
 import Home from './components/GeneralViews/Home'
-import HomeList from './components/Views/Homes/HomeList'
+import HomeList from './components/Views/Houses/HouseList'
 
 createApp(App)
 	.component('HomeList', HomeList)

@@ -6,6 +6,9 @@ import modules from './modules'
 
 export default createStore({
   state: {
+    houseList: [],
+    currentHouse: Object,
+    isLoading: false,
   },
   getters,
   mutations,

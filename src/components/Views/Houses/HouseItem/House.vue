@@ -1,7 +1,5 @@
 <template>
-	<main>
-		<router-link to="/houses">Zobacz więcej</router-link>
-	</main>
+	<router-link :to="{name:'House', params: {id: house.id}}">Check house</router-link>
 </template>
 
 <script src="./component.js"></script>
