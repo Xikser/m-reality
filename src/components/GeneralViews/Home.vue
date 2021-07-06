@@ -1,8 +1,7 @@
 <template>
-	<main>
-		<router-link to="/houses">Zobacz więcej</router-link>
+	<main class="main">
+		<Header></Header>
+		<About></About>
 	</main>
 </template>
 
-<script src="./component.js"></script>
-<style src="./style.sass" lang="sass"/>

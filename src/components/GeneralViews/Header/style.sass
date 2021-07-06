@@ -1,0 +1,92 @@
+.header
+	display: flex
+	width: 100%
+	min-height: 100vh
+	position: relative
+
+	&__content
+		display: flex
+		width: 100%
+		height: 100%
+
+	&__text, &__images
+		width: 50%
+
+	&__text
+		padding: 50px 125px
+		display: flex
+		flex-direction: column
+		text-align: center
+		justify-content: center
+
+		h2
+			font-size: 4rem
+
+		h3
+			font-size: 2rem
+			color: #0f8585
+
+		p
+			font-size: 1.4rem
+			margin: 25px 0
+
+		a
+			font-size: 1.7rem
+			border: 1px solid #0f8585
+			color: #0f8585
+			width: 200px
+			margin: 0 auto
+			padding: 10px 25px
+
+	&__images
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+
+		&-box
+			width: 50%
+			height: 50%
+
+			img
+				width: 100%
+				height: 100%
+
+			&:nth-child(1)
+				background: lightblue
+				display: flex
+				align-items: center
+				justify-content: center
+
+				img
+					width: 50%
+					height: 50%
+
+			&:nth-child(4)
+				display: flex
+				align-items: center
+				text-align: center
+				padding: 0 50px
+				font-size: 1.7rem
+				background: lightblue
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.header
+		min-height: 100vh
+
+		&__content
+			flex-direction: column
+
+		&__images, &__text
+			width: 100%
+
+		&__images
+
+			&-box
+				width: 100%
+				height: 100%
+
+				&:nth-child(4)
+					font-size: 1.2rem
+
+		&__text
+			padding: 50px
